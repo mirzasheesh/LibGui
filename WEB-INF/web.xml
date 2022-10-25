@@ -1,0 +1,74 @@
+<web-app>
+
+    <display-name>eLibrary By Sheesh Mirza</display-name>
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/404.html</location>
+    </error-page>
+
+    <servlet>
+        <servlet-name>StudentPanel</servlet-name>
+        <servlet-class>StudentPanel</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StudentPanel</servlet-name>
+        <url-pattern>/student</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ManagementPanel</servlet-name>
+        <servlet-class>ManagementPanel</servlet-class>
+        
+        <init-param>
+            <param-name>password</param-name>
+            <param-value>admin</param-value>
+        </init-param>
+    </servlet>
+
+    <context-param>
+        <param-name>username</param-name>
+        <param-value>admin</param-value>
+    </context-param>
+
+    <servlet-mapping>
+        <servlet-name>ManagementPanel</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentServlet</servlet-name>
+        <servlet-class>StudentServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StudentServlet</servlet-name>
+        <url-pattern>/students</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BookServlet</servlet-name>
+        <servlet-class>BookServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BookServlet</servlet-name>
+        <url-pattern>/books</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LibraryServlet</servlet-name>
+        <servlet-class>LibraryServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LibraryServlet</servlet-name>
+        <url-pattern>/library</url-pattern>
+    </servlet-mapping>
+
+</web-app>

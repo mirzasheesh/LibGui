@@ -1,0 +1,60 @@
+body {
+    background-color: #e6e6e6;
+    text-align: center;
+}
+
+.wrapper {
+    border: solid 1px;
+    margin: 15% 35%;
+    background-color: #7070db;
+}
+
+.head p{
+    font-size: 20px;
+}
+
+.main {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.main button {
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #ffffe6;
+    margin-left: 10px;
+}
+
+.input input{
+    margin: 10px;
+    background-color: #ebebfa;
+    border: 0;
+    border-radius: 5px;
+    height: 25px;
+    text-align: center;
+}
+
+.input button{
+    margin-top: 10px;
+    background-color: #ffffe6;
+    border: 0;
+    border-radius: 5px;
+}
+
+.students {
+    display: flex;
+    justify-content: center;
+}
+
+.students table, th, td {
+    border: 1px solid black;
+}
+
+.students table {
+    text-align: center;
+}
+
+.students th, td {
+    padding: 4px 10px;
+}
